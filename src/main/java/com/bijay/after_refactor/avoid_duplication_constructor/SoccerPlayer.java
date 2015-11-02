@@ -9,21 +9,22 @@ public class SoccerPlayer {
     private String name;
     private String grade;
     private PlayerType playerType;
-    public enum PlayerType {FRONT, BACK, MIDDLE};
+    public enum PlayerType { FRONT, BACK, MIDDLE };
 
 
     /**
-     * @apiNote  3 constuctors code duplication replaced by methods after refactor, eliminate duplicate code
-     *Only one constructor should have all the parameters
+     * @apiNote  3 constuctors code duplication replaced by methods after refactor
+     * eliminate duplicate code
+     * Only one constructor should have all the parameters
      *
      */
     public SoccerPlayer(int age, String name) {
-      this(age,name,null,null);
+      this(age, name, null, null);
     }
 
 
     public SoccerPlayer(int age, String name, String grade) {
-        this(age,name,grade,null);
+        this(age, name, grade, null);
     }
 
     public SoccerPlayer(int age, String name, String grade, PlayerType playerType) {
@@ -61,6 +62,10 @@ public class SoccerPlayer {
         return playerType;
     }
 
+    /**
+     * set player type
+     * @param playerType
+     */
     public void setPlayerType(PlayerType playerType) {
         this.playerType = playerType;
     }
