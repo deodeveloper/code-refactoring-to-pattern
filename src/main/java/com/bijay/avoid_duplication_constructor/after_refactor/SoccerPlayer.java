@@ -1,4 +1,4 @@
-package com.bijay.before_refactor.avoid_duplication_constructor;
+package com.bijay.avoid_duplication_constructor.after_refactor;
 
 /**
  * Created by bijaydeo on 11/1/15.
@@ -9,23 +9,21 @@ public class SoccerPlayer {
     private String name;
     private String grade;
     private PlayerType playerType;
-    public enum PlayerType {FRONT, BACK, MIDDLE};
-
+    public enum PlayerType { FRONT, BACK, MIDDLE };
 
     /**
-     * @apiNote  3 constuctors and duplication code. how to solve ?
-     *@see com.bijay.after_refactor.avoid_duplication_constructor.SoccerPlayer
+     * @apiNote  3 constuctors code duplication replaced by methods after refactor
+     * eliminate duplicate code
+     * Only one constructor should have all the parameters
+     *
      */
     public SoccerPlayer(int age, String name) {
-        this.age = age;
-        this.name = name;
+      this(age, name, null, null);
     }
 
 
     public SoccerPlayer(int age, String name, String grade) {
-        this.age = age;
-        this.name = name;
-        this.grade = grade;
+        this(age, name, grade, null);
     }
 
     public SoccerPlayer(int age, String name, String grade, PlayerType playerType) {
@@ -63,6 +61,10 @@ public class SoccerPlayer {
         return playerType;
     }
 
+    /**
+     * set player type
+     * @param playerType
+     */
     public void setPlayerType(PlayerType playerType) {
         this.playerType = playerType;
     }
