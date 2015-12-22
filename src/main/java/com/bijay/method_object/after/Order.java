@@ -1,4 +1,4 @@
-package com.bijay.method_object.after_refactor;
+package com.bijay.method_object.after;
 
 /**
  * Created by bijaydeo on 12/20/15.

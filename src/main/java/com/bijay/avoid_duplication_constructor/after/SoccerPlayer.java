@@ -1,4 +1,4 @@
-package com.bijay.avoid_duplication_constructor.after_refactor;
+package com.bijay.avoid_duplication_constructor.after;
 
 /**
  * Created by bijaydeo on 11/1/15.

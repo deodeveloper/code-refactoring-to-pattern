@@ -1,4 +1,4 @@
-package com.bijay.method_object.before_refactor;
+package com.bijay.method_object.before;
 
 import java.util.*;
 
@@ -37,6 +37,10 @@ public class Order {
 
 
     public double getDiscountedCost() {
+        return getaDouble();
+    }
+
+    private double getaDouble() {
         return totalCost - calculateDiscount() * totalCost;
     }
 

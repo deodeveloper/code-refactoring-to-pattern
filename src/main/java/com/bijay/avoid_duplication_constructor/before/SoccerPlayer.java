@@ -1,4 +1,4 @@
-package com.bijay.avoid_duplication_constructor.before_refactor;
+package com.bijay.avoid_duplication_constructor.before;
 
 /**
  * Created by bijaydeo on 11/1/15.
@@ -14,7 +14,7 @@ public class SoccerPlayer {
 
     /**
      * @apiNote  3 constuctors and duplication code. how to solve ?
-     *@see com.bijay.avoid_duplication_constructor.after_refactor.SoccerPlayer
+     *@see com.bijay.avoid_duplication_constructor.after.SoccerPlayer
      */
     public SoccerPlayer(int age, String name) {
         this.age = age;
