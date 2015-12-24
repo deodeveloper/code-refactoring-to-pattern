@@ -7,8 +7,8 @@ public class Order {
 
     String customerId;
     String orderedItemId;
-    int orderedQuantity;
-    double totalCost;
+    public int orderedQuantity;
+    public double totalCost;
     float discount;
     String itemName;
 
@@ -61,7 +61,7 @@ public class Order {
             int discountQuantity = Integer.parseInt(discountProperties.getProperty("quantity")) == 0 ?defaultQuantity:Integer.parseInt(discountProperties.getProperty("quantity"));
             double minimumDiscountPrice = Integer.parseInt(discountProperties.getProperty("minimum.price")) == 0 ?minimumPrice:Integer.parseInt(discountProperties.getProperty("minimum.price"));
 
-            if(order.orderedQuantity>discountQuantity && order.totalCost>minimumPrice)
+            if(order.orderedQuantity>discountQuantity && order.totalCost>minimumDiscountPrice)
                 return discount;
             else
                 return 0.0f;
