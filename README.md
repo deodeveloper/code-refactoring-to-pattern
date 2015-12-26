@@ -7,7 +7,7 @@ Here are some refactoring patterns that apply
     </ul>
     
 <h2> All the codes are wrapped in package before_refactor and after_refactor.</h2> 
-Check the problem in before_refactor before moving to solution on after_refactor.
+Check the problem in package "before" before refactoring and moving to solution on "after" after refactoring.
 
 <h3>You are welcome to comment and contribute. </h3>
 
