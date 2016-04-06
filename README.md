@@ -6,7 +6,7 @@ Here are some refactoring patterns that apply
     <li> Common sense</li>
     </ul>
     
-<h2> All the codes are wrapped in package before_refactor and after_refactor.</h2> 
+<h2> Please go to a concept first. Then all the codes are wrapped in package before and after.</h2> 
 Check the problem in package "before" before refactoring and moving to solution on "after" after refactoring.
 
 <h3>You are welcome to comment and contribute. </h3>
